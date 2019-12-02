@@ -8,7 +8,7 @@ var operations = ['add', 'mult', 'div', 'subst'];
 for(let i=0; i<operations.length; i++) {
     $(`#${operations[i]}`).click(function () {
         $.ajax({
-            url: `http://127.0.0.1:8000/api/v1/${operations[i]/}`,
+            url: `http://127.0.0.1:8000/api/v1/${operations[i]}/`,
             method: 'POST',
             dataType: 'json',
             contentType: "application/json",
