@@ -1,0 +1,33 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>API</title>
+</head>
+<body>
+    <div>
+        <p>
+             <input type = "number" name = "digit 1" value = " ">
+        </p>
+        <p>
+            <input type = "number" name = "digit 1" value = " ">
+        </p>
+        <p>
+            <button type="button" id="add"> Add  </button>
+             <button type="button" id="subt"> Subtract </button>
+             <button type="button" id="div"> Divide </button>
+             <button type="button" id="mult"> Multiply </button>
+        </p>
+    </div>
+
+    <div> Result
+
+    </div>
+
+    <script src={% static "/js/jquery-3.4.1.min.js"%}></script>
+    <script src={% static "/js/main.js" %}></script>
+{#    <script src={% static "/js/popper.min.js"%}></script>#}
+{#    <script src={% static "/js/bootstrap.min.js"%}></script>#}
+</body>
+</html>

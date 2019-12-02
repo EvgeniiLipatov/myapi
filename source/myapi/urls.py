@@ -6,5 +6,8 @@ app_name = 'myapi'
 
 
 urlpatterns = [
-    path('add/', add_view, name='add')
+    path('add/', add_view, name='add'),
+    path('divide/', divide_view, name='divide'),
+    path('subtract/', subtract_view, name='subtract'),
+    path('multiply/', multiply_view, name='multiply')
 ]

@@ -1,10 +1,10 @@
 from django.urls import path
-# from .views import add_view, divide_view, multiply_view, subtract_view
+from .views import index_view
 
 
 app_name = 'webapp'
 
 
-urlpatterns = []
-# path('add/', add_view, name='add')
-
+urlpatterns = [
+ path('', index_view.as_view(), name='index')
+]
